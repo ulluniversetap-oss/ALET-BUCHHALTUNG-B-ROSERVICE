@@ -26,7 +26,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 88px; }
 
 body {
   margin: 0;
-  background: var(--dark);
+  background: var(--cream);
   color: var(--ink);
   font-family: "Inter Tight", system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size: var(--text);
@@ -46,9 +46,9 @@ ul { margin: 0; padding: 0; list-style: none; }
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(14, 14, 16, .86);
+  background: rgba(243, 239, 232, .92);
   backdrop-filter: blur(12px);
-  color: var(--on-dark);
+  color: var(--ink);
 }
 .header-inner {
   display: flex;
@@ -60,10 +60,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .logo { text-decoration: none; display: flex; flex-direction: column; line-height: 1.1; }
 .logo-mark { font-weight: 600; letter-spacing: 0.18em; font-size: clamp(18px, 1.2vw, 24px); }
-.logo-sub { font-size: clamp(11px, 0.7vw, 14px); color: var(--on-dark-soft); letter-spacing: 0.04em; }
+.logo-sub { font-size: clamp(11px, 0.7vw, 14px); color: var(--ink-soft); letter-spacing: 0.04em; }
 .nav { display: flex; gap: clamp(24px, 3vw, 64px); font-size: 0.9em; }
-.nav a { text-decoration: none; color: var(--on-dark-soft); transition: color .2s; }
-.nav a:hover { color: #fff; }
+.nav a { text-decoration: none; color: var(--ink-soft); transition: color .2s; }
+.nav a:hover { color: var(--ink); }
 
 /* Buttons */
 .btn {
@@ -106,10 +106,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 .eyebrow-dark::before { background: var(--dark); }
 
 /* Hero */
-.hero-wrap { padding: clamp(6px, .8vw, 16px) clamp(6px, .8vw, 16px) 0; background: var(--dark); }
+.hero-wrap { padding: 0 var(--gutter); background: var(--cream); }
 .hero {
   position: relative;
-  min-height: max(620px, calc(100svh - clamp(64px, 5vw, 96px) - 24px));
+  min-height: max(620px, calc(100svh - clamp(64px, 5vw, 96px) - 16px));
   padding: clamp(32px, 4vw, 96px) var(--gutter) clamp(24px, 2.4vw, 56px);
   border-radius: var(--radius);
   color: #fff;
