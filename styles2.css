@@ -240,7 +240,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 #arbeitsweise .panel {
   background:
     radial-gradient(ellipse 50% 70% at 100% 0%, rgba(255, 106, 26, .22), transparent 70%),
-    repeating-linear-gradient(90deg, rgba(255,255,255,.02) 0 2px, transparent 2px 46px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.017) 0 2px, transparent 2px 46px),
     linear-gradient(180deg, rgba(14, 14, 16, .78), rgba(14, 14, 16, .9)),
     url("assets/arbeitsweise.jpg") center / cover no-repeat,
     url("assets/hero.jpg") center / cover no-repeat,
