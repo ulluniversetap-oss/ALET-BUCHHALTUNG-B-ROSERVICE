@@ -145,7 +145,7 @@ a { color: inherit; }
 .section-head-row h2,
 .split h2,
 .contact h2 { font-size: var(--h2); line-height: 1.12; }
-.section-head { margin-bottom: clamp(40px, 4vw, 96px); max-width: 18em; font-size: var(--h2); }
+.section-head { margin-bottom: clamp(40px, 4vw, 96px); font-size: var(--h2); }
 .section-head .label { font-size: var(--text); }
 .section-head-row { display: grid; grid-template-columns: 25% 1fr; align-items: baseline; margin-bottom: clamp(32px, 3vw, 72px); }
 .section-head-row h2 { text-align: right; }
@@ -178,8 +178,8 @@ a { color: inherit; }
 .service-toggle::after { transform: rotate(90deg); }
 .service[open] .service-toggle::after { transform: rotate(0deg); }
 .service summary:hover .service-title { color: var(--accent); }
-.service-body { padding: 0 0 clamp(28px, 2.5vw, 56px) 20%; color: #3b3732; }
-.service-body > * { max-width: 62ch; }
+.service-body { padding: 0 24px clamp(28px, 2.5vw, 56px) 20%; color: #3b3732; }
+.service-body > p { max-width: 80ch; }
 .service-body p:last-child { margin-bottom: 0; }
 .note {
   margin-top: 16px;
@@ -189,7 +189,7 @@ a { color: inherit; }
   font-size: 0.9em;
   color: var(--muted);
 }
-.check-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.check-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px clamp(32px, 4vw, 96px); }
 .check-list li { position: relative; padding-left: 28px; }
 .check-list li::before {
   content: "";
@@ -334,6 +334,7 @@ a { color: inherit; }
   .service-num { font-size: 14px; }
   .service-title { font-size: 18px; }
   .service-body { padding: 0 0 24px 52px; }
+  .check-list { grid-template-columns: 1fr; }
   .format-cards { grid-template-columns: 1fr; margin-top: 40px; }
   .format-arrow { transform: rotate(90deg); justify-self: center; }
   .audience { grid-template-columns: 1fr; row-gap: 0; }
