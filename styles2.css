@@ -441,3 +441,73 @@ ul { margin: 0; padding: 0; list-style: none; }
 .panel .eyebrow::before { background: var(--gold); }
 .card.card-dark .card-icon { color: var(--gold); border-color: rgba(217, 168, 95, .5); }
 .audience .audience-wide span { color: var(--gold); }
+
+/* Persönlich vor Ort & digital */
+.onsite {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(24px, 5vw, 120px);
+  align-items: center;
+  padding: clamp(28px, 3.6vw, 90px);
+  background: var(--cream-card);
+  border: 1px solid var(--line-light);
+  border-radius: var(--radius);
+}
+.onsite-head .card-icon { margin-bottom: clamp(16px, 1.6vw, 32px); }
+.onsite h2 { font-size: var(--h2); line-height: 1.1; max-width: 14em; }
+.onsite-text { color: var(--ink-soft); max-width: 40em; }
+.onsite-text p:last-child { margin-bottom: 0; }
+.onsite-note {
+  margin-top: 1.4em;
+  padding: 0.9em 1.2em;
+  border-radius: var(--radius-sm);
+  background: rgba(217, 168, 95, .2);
+  color: var(--ink);
+  font-size: 0.95em;
+}
+
+/* Individuelle Preise */
+.price {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(24px, 5vw, 120px);
+  align-items: center;
+  padding: clamp(28px, 4vw, 100px);
+  border-radius: var(--radius);
+  color: var(--on-dark);
+  background:
+    radial-gradient(ellipse 50% 70% at 100% 0%, rgba(217, 168, 95, .22), transparent 70%),
+    var(--dark);
+}
+.price h2 { font-size: var(--h2); line-height: 1.1; max-width: 14em; margin-bottom: 0.6em; }
+.price-main p { color: var(--on-dark-soft); max-width: 34em; }
+.price-main .btn { margin-top: 0.8em; }
+.price-steps { display: grid; gap: clamp(10px, 1vw, 20px); margin: 0; padding: 0; list-style: none; }
+.price-steps li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(14px, 1.4vw, 28px);
+  align-items: start;
+  padding: clamp(16px, 1.6vw, 36px);
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, .05);
+}
+.price-steps p { margin: 0; color: var(--on-dark-soft); }
+.step-n {
+  display: grid;
+  place-items: center;
+  width: clamp(30px, 2.2vw, 44px);
+  height: clamp(30px, 2.2vw, 44px);
+  border-radius: 50%;
+  border: 1px solid rgba(217, 168, 95, .55);
+  color: var(--gold);
+  font-size: 0.9em;
+}
+.price-key { background: var(--gold-grad) !important; border-color: var(--gold) !important; }
+.price-key svg { width: clamp(30px, 2.2vw, 44px); height: auto; color: var(--on-gold); }
+.price-key p { color: var(--on-gold); font-weight: 500; }
+
+@media (max-width: 960px) {
+  .onsite, .price { grid-template-columns: 1fr; }
+}
