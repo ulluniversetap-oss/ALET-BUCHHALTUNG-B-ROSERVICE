@@ -127,7 +127,7 @@ ul { margin: 0; padding: 0; list-style: none; }
     repeating-linear-gradient(90deg, rgba(255,255,255,.028) 0 2px, transparent 2px 46px),
     linear-gradient(to top, rgba(33, 17, 10, .88) 0%, transparent 62%),
     linear-gradient(160deg, rgba(74, 42, 28, .5) 0%, rgba(50, 28, 18, .62) 55%, rgba(33, 17, 10, .85) 100%),
-    url("assets/hero.jpg") center 30% / cover no-repeat,
+    url("assets/hero-court.jpg") center 30% / cover no-repeat,
     #2b1810;
 }
 .hero::after {
