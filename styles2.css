@@ -616,3 +616,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 .card h3 small { display: block; margin-top: 0.35em; }
 .hero-note { padding: 0.7em 1.1em; border-radius: var(--radius-sm); background: rgba(255, 255, 255, .55); backdrop-filter: blur(8px); }
 @media (max-width: 640px) { .hero-note { padding: 0; background: none; backdrop-filter: none; } }
+
+/* Änderungen 16.11 */
+[hidden] { display: none !important; }
+.hero-foot { max-width: 78ch; }
+.hero-foot .star, .logo-sub .star, h3 .star, .card-sub .star { font-weight: 600; }
+@media (max-width: 640px) { .desktop-only { display: none !important; } .hero-foot { font-size: 0.62em; line-height: 1.3; } }
