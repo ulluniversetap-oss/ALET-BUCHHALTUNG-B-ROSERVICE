@@ -644,3 +644,4 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* 7 Karten: Büroservice über die ganze Breite */
 .cards .card-dark { grid-column: 1 / -1; }
+.cta-card .star, .card-dark .star, .site-footer .star { color: inherit; }
