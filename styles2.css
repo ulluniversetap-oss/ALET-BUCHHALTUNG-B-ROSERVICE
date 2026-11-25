@@ -626,3 +626,21 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero-foot { background: rgba(255, 250, 244, .94); padding: .7em 1em; border-radius: 12px; box-shadow: 0 1px 8px rgba(60, 20, 5, .12); font-size: .82em; }
 .card-fn { margin: .9em 0 0; font-size: .78em; line-height: 1.4; color: var(--ink-soft); }
 @media (max-width: 640px) { .hero-foot { font-size: .66em; padding: .6em .8em; } }
+
+/* Über mich auf Mobil: schlichter Fließtext statt Icon-Liste (Änderung 16.11) */
+@media (max-width: 640px) {
+  .about2-list li { display: block; padding: 0 0 .9em; border-bottom: 0; font-size: 1em; line-height: 1.55; }
+  .about2-list .badge { display: none; }
+  .about2-list strong { color: inherit; font-weight: inherit; }
+  .about2-list .chip { padding: 0; background: none; color: inherit; font-weight: inherit; font-size: inherit; }
+  .about2-list .m-gap { display: block; content: ""; margin-top: .9em; }
+  .about2-cards .soft-card { padding: 0; background: none; border: 0; }
+  .about2-cards .soft-card header { margin-bottom: .6em; }
+  .about2-cards .soft-card .badge { display: none; }
+  .about2-cards .soft-card h3 { font-size: 1.4em; font-style: normal; }
+  .about2-cards .quote { padding: 0; background: none; text-align: left; font-size: 1em; margin-bottom: .6em; }
+  .about2-cards .soft-card p { font-size: 1em; line-height: 1.55; }
+}
+
+/* 7 Karten: Büroservice über die ganze Breite */
+.cards .card-dark { grid-column: 1 / -1; }
