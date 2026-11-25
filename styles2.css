@@ -622,3 +622,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero-foot { max-width: 78ch; }
 .hero-foot .star, .logo-sub .star, h3 .star, .card-sub .star { font-weight: 600; }
 @media (max-width: 640px) { .desktop-only { display: none !important; } .hero-foot { font-size: 0.62em; line-height: 1.3; } }
+
+.hero-foot { background: rgba(255, 250, 244, .94); padding: .7em 1em; border-radius: 12px; box-shadow: 0 1px 8px rgba(60, 20, 5, .12); font-size: .82em; }
+.card-fn { margin: .9em 0 0; font-size: .78em; line-height: 1.4; color: var(--ink-soft); }
+@media (max-width: 640px) { .hero-foot { font-size: .66em; padding: .6em .8em; } }
